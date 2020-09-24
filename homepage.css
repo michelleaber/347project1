@@ -1,0 +1,91 @@
+.navlinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: black;
+
+    
+}
+.navlink > a { /*direct descandant property to select anchor*/
+
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color:white;
+    
+}
+
+.navlink > a:hover {
+    display: block;
+    background-color: rgb(80,80,80);
+    padding: 5px;
+    
+    
+}
+body {
+    margin: 0;
+    /* font-size: 4em;
+    font-family: sans-serif; */
+}
+
+/* 
+ .slides{
+  max-width: 1000px;
+  position: relative;
+   margin: auto; 
+}
+
+.slide {
+  background-color: cadetblue; 
+  position: fixed;
+  display: none;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 30px;
+  transition: transform 2s ease-in-out; 
+  box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+
+.slide:not(:first-child) {
+  transform: translateX(100%);
+}
+
+.slide.current {
+  transform: unset;
+}
+
+.slide.past {
+  transform: translateX(-100%);
+}
+
+#left {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  color: lightslategray;
+  transition: color 0.2s linear;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow:hover {
+  color: black;
+}
+
+#controls {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  margin: 0 20px 10px 0;
+}  */ 
