@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Project1</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="input-form.css">
 </head>
 
 
@@ -21,14 +22,32 @@
             </ul>
         </nav>
 <!--input form - Title (Name the user wants it to be), url of website, date saved-->
-<div class="slides">
-    <div class="slide">
-        <!-- <img src="football.jpeg" style="width:100%"> -->
-      </div>
+<main>
 
-    
-</div>
-        
+
+    <div class="root">
+
+
+        <div class="input form">
+            <form>
+                <!--action tag?? idk i think its supposed to be there like action= action.php but no php i cant use/dont want to lol-->
+                <label class="recipe-forms"> Enter the name of the recipe: <input type="text" id="recipe-name"
+                        name="recipe-name"></label>
+                </br>
+                <label class="recipe-forms">Enter the ingredients for the recipe: <br /><textarea rows="5" cols="50" name="recipe-ingredients">Enter any additional notes here...</textarea></label>
+                </br>
+                <label class="recipe-forms">Enter the instructions for the recipe: <br /><textarea rows="5" cols="50" name="recipe-instructions">Enter any additional notes here...</textarea></label>
+                </br>
+                <label class="recipe-forms">Notes: <br /><textarea rows="5" cols="50" name="recipe-notes">Enter any additional notes here...</textarea></label>
+                </br>
+                <label><input type="submit"></label>
+            </form>
+            <!-- <img src="football.jpeg" style="width:100%"> -->
+        </div>
+
+
+    </div>
+</main>
 </body>
 <footer>
 
