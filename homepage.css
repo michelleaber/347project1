@@ -27,8 +27,12 @@
 }
 body {
     margin: 0;
+
     /* font-size: 4em;
     font-family: sans-serif; */
+}
+main{
+  padding: 20px;
 }
 .slideshow{
   width: 500px;
