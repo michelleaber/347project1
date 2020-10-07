@@ -23,6 +23,7 @@
 input[type=text],textarea, input[type=url]{
     padding: 20px;
     margin: 20px;
+    
     /* box-shadow:0 0 15px 4px rgba(0,0,0,0.06); */
 }
 input[type=submit] {
