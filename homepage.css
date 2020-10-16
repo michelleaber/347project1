@@ -9,6 +9,8 @@
 
     
 }
+
+/*cursor thing for little hand submit button*/
 .navlink > a { /*direct descandant property to select anchor*/
 
     display: block;
