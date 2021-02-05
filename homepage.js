@@ -1,3 +1,4 @@
+
 const slides = document.querySelectorAll('.slide');
 let i = 0;
 
@@ -19,5 +20,5 @@ function backward() {
   }
 }
 
-document.getElementById('prev').addEventListener('click', backward);
-document.getElementById('next').addEventListener('click', forward);
+document.getElementById('left').addEventListener('click', backward);
+document.getElementById('right').addEventListener('click', forward);
