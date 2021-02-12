@@ -31,6 +31,19 @@ body {
      
 } 
 
+ #welcome-message { 
+  text-align: center;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  opacity: 1;
+  font-family:  'Courier New', monospace;
+  font-weight: bold;
+  font-size: 67px;
+  font-style: italic;
+  
+}
+
 
   .carousel{
     display: flex;
@@ -46,7 +59,7 @@ body {
 
 
   .slide {
-    background-color: cadetblue;
+    background-color: rgb(156, 205, 218);
     opacity: 1;
     position: absolute;
     left: 0;
@@ -71,25 +84,37 @@ body {
   }
   
   #left {
-    transform: rotate(180deg);
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 0;
+
+  }
+  #right {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    right: 0;
+
   }
   
   .arrow {
-    color: lightslategray;
+    color: white;
     transition: color 0.2s linear;
     cursor: pointer;
     user-select: none;
+    font-size:100px;
   }
   
   .arrow:hover {
     color: black;
   }
   
-  #controls {
+  /* #controls {
     position: fixed;
     display: flex;
     margin: 0 20px 10px 0;
     right: 0;
     bottom: 0;
   }
-  
+   */
