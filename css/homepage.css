@@ -7,7 +7,7 @@ header {
 h1{
   margin: 0;
 }
-nav > ul{
+.navlinks{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -44,14 +44,15 @@ nav > ul{
 
  #welcome-message { 
   text-align: left; 
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: center; */
+  justify-content: flex-start;
   opacity: 1;
-  font-family:  'Courier New', monospace;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 67px;
   font-style: italic;
+  color:black;
   
 }
 
@@ -60,7 +61,7 @@ nav > ul{
     display: flex;
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100vh;   /* w/o this the nav buttons work*/
   }
   
   .image-box {
@@ -71,6 +72,7 @@ nav > ul{
 
   .slide {
     /* background-color: lightblue; */
+    color: transparent;
     opacity: 1;
     position: absolute;
     left: 0;
@@ -160,7 +162,7 @@ nav > ul{
     #navigation.open {
       display:block;
     }
-    .navlink{
+    .navlinks{
       flex-direction: column;
     }
     .navlink > a{
@@ -172,16 +174,16 @@ nav > ul{
     }
   }
   
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     nav > ul {
       flex-direction: column;
     }
-  }
-  /* #controls {
+  } */
+  #controls {
     position: fixed;
     display: flex;
     margin: 0 20px 10px 0;
     right: 0;
     bottom: 0;
   }
-   */
+  
