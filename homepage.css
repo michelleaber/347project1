@@ -1,7 +1,13 @@
 body {
   margin: 0;
 }
-.navlinks {
+header {
+  font-family: sans-serif;
+}
+h1{
+  margin: 0;
+}
+nav > ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -9,15 +15,15 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     background-color: black;
+    font-size: 1.5em;
 
-    
 }
 
 /* cursor thing for little hand submit button*/
  .navlink > a { /* direct descandant property to select anchor */
 
     display: block;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     color:white;
     
@@ -26,13 +32,18 @@ body {
 .navlink > a:hover {
     display: block;
     background-color: rgb(80,80,80);
-    padding: 5px;
-    
-     
+    /* padding: 5px; */
 } 
 
+.navlink > a:active {
+  display: block;
+  background-color: lightblue;
+  /* padding: 5px; */
+} 
+
+
  #welcome-message { 
-  text-align: center;
+  text-align: left; 
   /* display: flex;
   flex-direction: row;
   justify-content: center; */
@@ -59,7 +70,7 @@ body {
 
 
   .slide {
-    background-color: rgb(156, 205, 218);
+    /* background-color: lightblue; */
     opacity: 1;
     position: absolute;
     left: 0;
@@ -109,7 +120,63 @@ body {
   .arrow:hover {
     color: black;
   }
+  #menu-button{
+    display: none;
+  }
+  @media (max-width: 600px) {
+    header {
+      background-color:black;
+      color: white;
+      margin: -8px;  
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+      position: sticky; 
+      left: 0;
+      right: 0;
+      top: 0;
+
+      box-shadow: 0 0 20px black;
+/* Questions: how to put background in without covering new navbar
+              how to make menu bar and title go on both ends */
+    }
+    h1{
+      padding: 8px;
+    }
+    #menu-button{
+      display: flex;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+    }
+    #navigation{
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+    }
+    #navigation.open {
+      display:block;
+    }
+    .navlink{
+      flex-direction: column;
+    }
+    .navlink > a{
+      border-top: 1px solid white;
+    }
+
+    #menu-button:hover{
+      background-color: rgb(80,80,80);
+    }
+  }
   
+  @media (max-width: 500px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
   /* #controls {
     position: fixed;
     display: flex;
