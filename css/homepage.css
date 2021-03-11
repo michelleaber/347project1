@@ -124,7 +124,23 @@ h1{
   }
   #menu-button{
     display: none;
+  
   }
+
+  
+  /* @media (max-width: 500px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  } */
+  #controls {
+    position: fixed;
+    display: flex;
+    margin: 0 20px 10px 0;
+    right: 0;
+    bottom: 0;
+  }
+  
   @media (max-width: 600px) {
     header {
       background-color:black;
@@ -139,9 +155,9 @@ h1{
       left: 0;
       right: 0;
       top: 0;
-
+  
       box-shadow: 0 0 20px black;
-/* Questions: how to put background in without covering new navbar
+  /* Questions: how to put background in without covering new navbar
               how to make menu bar and title go on both ends */
     }
     h1{
@@ -168,22 +184,8 @@ h1{
     .navlink > a{
       border-top: 1px solid white;
     }
-
+  
     #menu-button:hover{
       background-color: rgb(80,80,80);
     }
   }
-  
-  /* @media (max-width: 500px) {
-    nav > ul {
-      flex-direction: column;
-    }
-  } */
-  #controls {
-    position: fixed;
-    display: flex;
-    margin: 0 20px 10px 0;
-    right: 0;
-    bottom: 0;
-  }
-  
