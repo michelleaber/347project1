@@ -71,7 +71,7 @@ h1{
 
 
   .slide {
-    /* background-color: lightblue; */
+    background-color: lightblue;
     color: transparent;
     opacity: 1;
     position: absolute;
@@ -157,6 +157,7 @@ h1{
       top: 0;
   
       box-shadow: 0 0 20px black;
+      z-index: 9999;
   /* Questions: how to put background in without covering new navbar
               how to make menu bar and title go on both ends */
     }
