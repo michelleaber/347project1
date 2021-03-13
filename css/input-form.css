@@ -32,7 +32,7 @@ input[type=submit] {
     width: 30%;
     background-color: lightblue;
     border: none;
-    align-items: center !important; 
+    align-items: center !important;  
 
     /* box-shadow:0 0 15px 4px rgba(0,0,0,0.06); */
 }
