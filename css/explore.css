@@ -33,7 +33,7 @@ main {
     padding: 10px;
     flex-direction: column;
 }
-  .section {
+  .accordion {
     cursor: pointer;
     padding: 20px;
     width: 100%;
@@ -53,7 +53,7 @@ main {
 
 
  }  
- .section.open, .section:hover {
+ .accordion.open, .accordion:hover {
      background-color: lightgrey;
 
  }

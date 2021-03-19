@@ -1,4 +1,4 @@
-const accordions = document.querySelectorAll('.section');
+const accordions = document.querySelectorAll('.accordion');
 console.log(accordions);
 for (let index = 0; index < accordions.length; index+=1) {
     accordions[index].addEventListener('click', function () {
