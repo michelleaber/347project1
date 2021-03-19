@@ -1,8 +1,4 @@
-.container {
-   
 
-    
-}
 .card {
     flex-grow: 1;
     border: solid 1px black;
@@ -10,11 +6,11 @@
     padding: 5px;
     margin: 1em;
 }
-/* #middler {
+ #middler {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
-} */
+} 
 #lefter {
     height: 100%;
     flex-basis: 200px;
@@ -27,13 +23,37 @@ main {
     display: flex;
     flex-direction: row;
 
-}
+} 
 .container {
-     display: flex;
-    justify-content: space-around;
-    /* flex-direction:column;  */
+    display: flex;
+    justify-content: space-around; 
+    flex-direction:column;  
     flex-grow: 1; 
     flex-basis: 0;
     padding: 10px;
     flex-direction: column;
 }
+  .section {
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    /* transition: 0.4s; */
+    border: none;
+
+ }
+
+ .content {
+    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+
+ }  
+ .section.open, .section:hover {
+     background-color: lightgrey;
+
+ }
