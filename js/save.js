@@ -1,6 +1,6 @@
 const submitButton = document.getElementById('submit-button');
 const name = document.getElementById('recipe-name');
-const value = name.value();
+const value = name.value;
 
 submitButton.addEventListener('click', () => {
    setCookie(name, value, 30);
