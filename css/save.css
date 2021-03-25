@@ -55,13 +55,13 @@ body{
     background-color: lightblue;
     /* width: 50vw; */
     width:50%;
-    /* justify-content: space-between; */
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /* justify-content: center;
+    align-items: center; */
+    /* height: 100vh; */
 
    
    

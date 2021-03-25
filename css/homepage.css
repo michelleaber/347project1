@@ -9,7 +9,7 @@ h1,h2,h3{
   margin: 0;
   font-family: Arial, sans-serif;
 }
-p, a, label, textarea, button {
+p, a, label, textarea, button, .label {
   font-family: Georgia;
 }
 #slide-show-image {
@@ -21,35 +21,49 @@ p, a, label, textarea, button {
 
 
 }
-.navlinks{
+
+.navlinks, .options {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+.navlinks {   
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: black;
     font-size: 1.5em;
+}
+.options { 
+  display: none; 
+  position: absolute;
+  background-color: black;
+}
+.navlink {
+  position:relative;
+}
 
+.navlink:hover > .options {
+  display: block;
+  z-index: 10000;
 }
 
 /* cursor thing for little hand submit button*/
- .navlink > a { /* direct descandant property to select anchor */
+ .navlink > a, .label, .options >li > a  { /* direct descandant property to select anchor */
 
     display: block;
     padding: 10px;
     text-decoration: none;
     color:white;
-    
+    cursor: pointer;
 }
-
-.navlink > a:hover {
+.navlink > a:hover, .label:hover, .options> li > a:hover{
     display: block;
     background-color: rgb(80,80,80);
     /* padding: 5px; */
 } 
 
-.navlink > a:active {
+.navlink > a:active, .label:active {
   display: block;
   background-color: lightblue;
   /* padding: 5px; */
@@ -173,8 +187,6 @@ p, a, label, textarea, button {
   
       box-shadow: 0 0 20px black;
       z-index: 9999;
-  /* Questions: how to put background in without covering new navbar
-              how to make menu bar and title go on both ends */
     }
     h1{
       padding: 8px;
@@ -197,7 +209,7 @@ p, a, label, textarea, button {
     .navlinks{
       flex-direction: column;
     }
-    .navlink > a{
+    .navlink > a, .navlink > .label{
       border-top: 1px solid white;
     }
   

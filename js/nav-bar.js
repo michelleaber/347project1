@@ -1,5 +1,6 @@
 const navigation = document.getElementById('navigation');
 const menuButton = document.getElementById('menu-button');
+const dropDownMenu = document.getElementById('save-a-recipe');
 
 menuButton.addEventListener('click', event => {
   navigation.classList.toggle('open');
@@ -9,3 +10,11 @@ menuButton.addEventListener('click', event => {
 document.addEventListener('click', () => {
   navigation.classList.remove('open');
 });
+
+dropDownMenu.addEventListener('click', event => {
+  console.log(dropDownMenu.classList);
+  dropDownMenu.classList.toggle('open');
+  event.stopPropagation();
+});
+
+
