@@ -11,10 +11,10 @@
     display: flex;
     flex-direction: row;
 } 
-#lefter {
+/* #lefter {
     height: 100%;
     flex-basis: 200px;
-}
+} */
 .recipe-categories {
     list-style: none;
 }
