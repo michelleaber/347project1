@@ -12,7 +12,7 @@ h1,h2,h3{
 p, a, label, textarea, button, .label {
   font-family: Georgia;
 }
-#slide-show-image {
+figure {
   /* object-fit contain or cover for fixed resolution - width 400px height 400px*/
   height: 100%;
   background-position: center;
@@ -45,7 +45,7 @@ p, a, label, textarea, button, .label {
 
 .navlink:hover > .options {
   display: block;
-  z-index: 10000;
+  z-index: 2;
 }
 
 /* cursor thing for little hand submit button*/
@@ -78,7 +78,7 @@ p, a, label, textarea, button, .label {
   opacity: 1;
   /* font-family: sans-serif; */
   font-weight: bold;
-  font-size: 67px;
+  font-size: 50px;
   /* font-style: italic; */
   color:black;
   
@@ -97,6 +97,15 @@ p, a, label, textarea, button, .label {
     height: 100%;
   } */
 
+  figure {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    font-family: sans-serif;
+    font-size: 0.9em;
+  }
 
   .slide {
     background-color: lightblue;
@@ -174,7 +183,7 @@ p, a, label, textarea, button, .label {
     header {
       background-color:black;
       color: white;
-      margin: -8px;  
+      /* margin: -8px;   */
       
       display: flex;
       flex-direction: row;
@@ -186,7 +195,7 @@ p, a, label, textarea, button, .label {
       top: 0;
   
       box-shadow: 0 0 20px black;
-      z-index: 9999;
+      z-index: 1;
     }
     h1{
       padding: 8px;
@@ -216,4 +225,16 @@ p, a, label, textarea, button, .label {
     #menu-button:hover{
       background-color: rgb(80,80,80);
     }
+
+     /* width: 100%;
+     height: auto; */
+    
+    figure {
+      width: 100%;
+    }
+  
+    figure > img {
+      width: 100%;
+    }
   }
+  
