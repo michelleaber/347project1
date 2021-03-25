@@ -4,10 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cook Book</title>
-    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/homepage.css">
     <script defer src="js/nav-bar.js"></script>
     <script defer src="js/slideshow.js"></script>
@@ -17,141 +16,83 @@
 <body>
 
     <header>
-    <h1>Cook Book</h1>
-   
-    <div id="menu-button">
-        <svg viewBox="0 0 100 80" width="30" height="30">
-            <rect fill="white" width="100" height="15"></rect>
-            <rect fill="white" y="30" width="100" height="15"></rect>
-            <rect fill="white" y="60" width="100" height="15"></rect>
-        </svg>
-    </div>
-    <nav id="navigation">
-        <ul class = "navlinks">
-            <li class="navlink"><a href="index.html">Home</a></li>
-            <li class="navlink"><a href="explore.html">Explore</a></li>
-            <li class="navlink"><a href="saved-recipes.html">View Your Saved Recipes</a></li>
-            <li class="navlink">
-                <div class="label" id="save-a-recipe">
-                    Save A Recipe&#9660;
-                </div>
-                
-                <ul class="options">
-                    <li><a href="create-a-recipe.html">Create Your Own Recipe</a></li>
-                    <li><a href="save-a-recipe.html">Save a Recipe from a Website</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
+        <h1>Cook Book</h1>
+
+        <div id="menu-button">
+            <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect fill="white" width="100" height="15"></rect>
+                <rect fill="white" y="30" width="100" height="15"></rect>
+                <rect fill="white" y="60" width="100" height="15"></rect>
+            </svg>
+        </div>
+        <nav id="navigation">
+            <ul class="navlinks">
+                <li class="navlink"><a href="index.html">Home</a></li>
+                <li class="navlink"><a href="explore.html">Explore</a></li>
+                <li class="navlink"><a href="saved-recipes.html">View Your Saved Recipes</a></li>
+                <li class="navlink">
+                    <div class="label" id="save-a-recipe">
+                        Save A Recipe&#9660;
+                    </div>
+
+                    <ul class="options">
+                        <li><a href="create-a-recipe.html">Create Your Own Recipe</a></li>
+                        <li><a href="save-a-recipe.html">Save a Recipe from a Website</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        
-
+        <div id="middler">
         <div class="carousel">
-        <div class="slide">
-            
+            <div class="slide">
+
                 <p id="welcome-message">Welcome to your own personal online cookbook!</p>
-          </div>
-        
-          <div class="slide">
-            <div id="root">
-            <figure>
-                 <img src = "images/dragon-noodles.jpeg" alt="Dragon Noodles; noodles in a white bowl with different seasonings around/on it. The bowl of noodles is focused while the rest of the picture is slightly blurred.">
-                <figcaption>Dragon Noodles from Kitchen Nostalgia. <a href="https://www.kitchennostalgia.com/pasta/dragon-noodles.html" class="explore-button">Visit here to get this delicious recipe!</a></figcaption>
-                
-            </figure>
-    
-               </div>
-    
-      
-          </div>
-          <div class="slide">
-            <div id="root">
-            <figure>
-                 <img src = "images/donuts.jpeg" alt="Maple Bacon Donuts; A few donuts on a grid backing rack. The donuts have shiny glaze to them with bacon bits on top and around them.">
-                <figcaption>Maple Bacon Donuts from The Hangry Woman. <a href="https://hangrywoman.com/maple-bacon-donuts/" class="explore-button">Visit here to get this delicious recipe!</a></figcaption>
-                
-            </figure>
-    
-               </div>
-    
-      
-          </div>
-          
-          
-          <!-- <div class="slide">
-                     
-            <figure> 
-                <img src = "images/donuts.jpeg" alt="Dragon Noodles; noodles in a white bowl with different seasonings around/on it. The bowl of noodles is focused while the rest of the picture is slightly blurred.">
-                <figcaption>Maple Bacon Donuts from The Hangry Woman. <a href="https://hangrywoman.com/maple-bacon-donuts/" class="explore-button">Visit here to get this delicious recipe!</a></figcaption>
-                
-            </figure>
-          </div> -->
-          
-          <div id="controls">
-            <div id="left" class="arrow">&#706;</div>
-            <div id="right" class="arrow">&#707;</div>
-          </div>
+            </div>
+
+            <div class="slide">
+                <div id="root">
+                    <figure>
+                        <img src="images/dragon-noodles.jpeg"
+                            alt="Dragon Noodles; noodles in a white bowl with different seasonings around/on it. The bowl of noodles is focused while the rest of the picture is slightly blurred.">
+                        <figcaption>Dragon Noodles from Kitchen Nostalgia. <a
+                                href="https://www.kitchennostalgia.com/pasta/dragon-noodles.html"
+                                class="explore-button">Visit here to get this delicious recipe!</a></figcaption>
+
+                    </figure>
+
+                </div>
+
+
+            </div>
+            <div class="slide">
+                <div id="root">
+                    <figure>
+                        <img src="images/donuts.jpeg"
+                            alt="Maple Bacon Donuts; A few donuts on a grid backing rack. The donuts have shiny glaze to them with bacon bits on top and around them.">
+                        <figcaption>Maple Bacon Donuts from The Hangry Woman. <a
+                                href="https://hangrywoman.com/maple-bacon-donuts/" class="explore-button">Visit here to
+                                get this delicious recipe!</a></figcaption>
+
+                    </figure>
+
+                </div>
+
+
+            </div>
+            <div id="controls">
+                <div id="left" class="arrow">&#706;</div>
+                <div id="right" class="arrow">&#707;</div>
+            </div>
         </div>
-       
-        <!-- </body> -->
-        <!-- </html> -->
-        
-    <!--input form - Title (Name the user wants it to be), url of website, date saved-->
-    <!-- <div class="slideshow">
-        <div class="slides">
-
-
-            <div class="slide" style=width:654px>
-                <div class="image-box">
-                    <img class="slide-image" src="pie.jpg">
-                    <button class="explore-button">Explore</button>
-                </div>
-            </div>
-            <div class="slide" style=width:654px>
-                <div class="image-box">
-                    <img class="slide-image" src="football.jpeg">
-                    <button class="explore-button">Explore</button>
-                </div>
-            </div>
-            <div class="slide" style=width:654px>
-                <div class="image-box">
-                    <img class="slide-image" src="pie.jpg">
-                    <button class="explore-button">Explore</button>
-                </div>
-            </div> -->
-            <!-- <div class="controls">
-                <ul>
-                  <li class="control" data-index="0"></li>
-                  <li class="control" data-index="1"></li>
-                  <li class="control" data-index="2"></li>
-                  <li class="control" data-index="3"></li>
-                  <li class="control" data-index="4"></li>
-                </ul>
-              </div> -->
-            <!-- <div id="controls">
-                <div id="prev" class="arrow">&#x2B95;</div>
-                <div id="next" class="arrow">&#x2B95;</div>
-            </div>
-        </div> -->
-        <!-- <map name="pie">
-        <area shape="rect" coords="0, 0, 100, 100" alt="Area Description" href="explore.html">
-    </map>
-       -->
-        <!-- <img alt="explore-page" id="pie" src="pie.jpg"  usemap="#pie"
-         width="100%"> -->
-
-<!-- 
-
     </div>
+    </main>
+    <footer>
+        <p>Copyright &#169; Cookbook. All Rights Reserved</p>
+    </footer>
+</body>
 
-
-    </div> -->
-    </main> 
-</body> 
-<footer>
-
-</footer>
 
 </html>

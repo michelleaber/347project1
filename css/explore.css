@@ -5,6 +5,7 @@
     box-shadow: 3px 6px 9px grey;
     padding: 5px;
     margin: 1em;
+    
 }
  #middler {
     flex-grow: 1;
@@ -26,14 +27,16 @@ main {
 } 
 .container {
     display: flex;
-    justify-content: space-around; 
-    flex-direction:column;  
+    /* justify-content: space-around;  */
+    justify-content: flex-start;
+    /* flex-direction:column;   */
     flex-grow: 1; 
     flex-basis: 0;
     padding: 10px;
     flex-direction: column;
 }
   .accordion {
+    display: flex;
     cursor: pointer;
     padding: 20px;
     width: 100%;
@@ -51,10 +54,21 @@ main {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+   
 
 
  }  
  .accordion.open, .accordion:hover {
      background-color: darkgrey;
+     
 
  }
+ /* .accordion:after {
+    justify-content: flex-end;
+    content: '\02795';
+ }
+ .open:after{
+    display: flex;
+    justify-content: flex-end;
+    content: "\2212";
+ } */
