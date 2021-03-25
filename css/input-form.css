@@ -1,3 +1,6 @@
+.root {
+    padding: 10px;
+}
 .recipe-forms{
     display: flex;
     flex-direction: column;

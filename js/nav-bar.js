@@ -10,7 +10,7 @@ menuButton.addEventListener('click', event => {
 document.addEventListener('click', () => {
   navigation.classList.remove('open');
 });
-
+console.log(dropDownMenu);
 dropDownMenu.addEventListener('click', event => {
   console.log(dropDownMenu.classList);
   dropDownMenu.classList.toggle('open');
