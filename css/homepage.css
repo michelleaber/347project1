@@ -10,11 +10,11 @@ body {
 main{
   flex-grow:1;
 }
-#middler {
+/* #middler {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-} 
+}  */
 header {
   font-family: Arial, sans-serif;
 }
@@ -48,19 +48,22 @@ p, a, label, textarea, button, .label, figcaption {
     background-color: black;
     font-size: 1.5em;
 }
-.options { 
+#drop-down-items { 
   display: none; 
   position: absolute;
   background-color: black;
 }
 .navlink {
-  position:relative;
+  position: relative;
 }
-
-.navlink:hover > .options {
+#drop-down-items.open{
   display: block;
   z-index: 2;
 }
+/* .navlink:hover > #drop-down-items {
+  display: block;
+  z-index: 2;
+} */
 
 /* cursor thing for little hand submit button*/
  .navlink > a, .label, .options >li > a  { /* direct descandant property to select anchor */
@@ -110,7 +113,7 @@ p, a, label, textarea, button, .label, figcaption {
     display: flex;
     position: fixed;
     width: 100%;
-    height: 100%;   /* w/o this the nav buttons work*/
+    height: 100%;   /*w/o this the nav buttons work*/
   }
   
   /* .image-box {
@@ -223,6 +226,7 @@ p, a, label, textarea, button, .label, figcaption {
     color: white;
     display: flex;
     justify-content: space-around;
+    z-index: 1;
   }
   
   
@@ -259,9 +263,16 @@ p, a, label, textarea, button, .label, figcaption {
       top: 100%;
       right: 0;
     }
+    #drop-down-items{
+      display: none;
+    }
+    #drop-down-items.open{
+      display: block;
+    }
     #navigation.open {
       display:block;
     }
+  
     .navlinks{
       flex-direction: column;
     }
