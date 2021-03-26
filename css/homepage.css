@@ -127,11 +127,14 @@ p, a, label, textarea, button, .label, figcaption {
 
 #img-caption {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   padding: 10px;
-  background-color: darkgrey;
+  background-color:rgba(0, 0, 0, 0.5);
   color: white;
+}
+#img-caption > a {
+  color:white;
 }
 
 .slide:not(:first-child) {
