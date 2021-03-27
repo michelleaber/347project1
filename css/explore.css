@@ -1,4 +1,54 @@
+/* .collapsible {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color:lightgrey;
+    font-size: 1.5em;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    
 
+}
+.expander {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+
+.expander:hover > .arrow , .collapser:hover > .arrow {
+    color: coral;;
+}
+
+.collapser {
+    text-align: center;
+
+}
+.arrow {
+    color:white;
+    transition: color 0.2s linear;
+} */
+.accordion > p {
+    flex-grow: 1;
+    margin: 0;
+
+}
+
+/* .down {
+    /* font-size: 3em; */
+    /* margin: 3px; 
+} */
 .card {
     flex-grow: 1;
     border: solid 1px black;
@@ -37,6 +87,7 @@ main {
 }
   .accordion {
     display: flex;
+    flex-direction: row;
     cursor: pointer;
     padding: 20px;
     width: 100%;
