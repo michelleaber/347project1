@@ -1,12 +1,15 @@
-const submitButton = document.getElementById('submit-button');
+// const submitButton = document.getElementById('submit-button');
+const submitButtons = document.querySelectorAll('.button-submit');
 const name = document.getElementById('recipe-name');
 const value = name.value;
 
+for (let submitButton of submitButtons) {
 submitButton.addEventListener('click', () => {
    setCookie(name, value, 30);
    alert('Your input has been submitted. Thank you!');
-
 });
+}
+
 
 function setCookie(name, value, numDays) {
     let currentDate = new Date();

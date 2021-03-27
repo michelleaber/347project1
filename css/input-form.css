@@ -28,10 +28,9 @@ input[type=submit] {
 
 .recipe-forms:focus-within {
     outline-color: blue;
-    outline-style: auto;
+    outline-style: none;
 }
 
 .recipe-forms:focus-within>span {
     font-weight: bold;
-    color: blue;
 }

@@ -11,20 +11,21 @@ body {
     flex-basis: 0;
 }
 
+/* 
 header {
     font-family: Arial, sans-serif;
-}
+} */
 
-h1, h2, h3 {
+header, h1, h2, h3 {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-p, a, label, textarea, button, .label, figcaption {
+p, a, label, textarea, button, .label, #img-caption {
     font-family: Georgia;
 }
 
-.navlinks, .options {
+.navlinks, #drop-down-items {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -38,22 +39,11 @@ p, a, label, textarea, button, .label, figcaption {
     font-size: 1.5em;
 }
 
-#drop-down-items {
-    display: none;
-    position: absolute;
-    background-color: black;
-}
-
 .navlink {
     position: relative;
 }
 
-#drop-down-items.open {
-    display: block;
-    z-index: 2;
-}
-
-.navlink>a, .label, .options>li>a {
+.navlink>a, .label, #drop-down-items>li>a {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -61,7 +51,7 @@ p, a, label, textarea, button, .label, figcaption {
     cursor: pointer;
 }
 
-.navlink>a:hover, .label:hover, .options>li>a:hover {
+.navlink>a:hover, .label:hover, #drop-down-items>li>a:hover {
     display: block;
     background-color: rgb(80, 80, 80);
 }
@@ -69,6 +59,17 @@ p, a, label, textarea, button, .label, figcaption {
 .navlink>a:active, .label:active {
     display: block;
     background-color: lightblue;
+}
+
+#drop-down-items {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+#drop-down-items.open {
+    display: block;
+    z-index: 2;
 }
 
 #menu-button {
@@ -89,6 +90,7 @@ p, a, label, textarea, button, .label, figcaption {
     margin: 10px;
     padding: 5px;
 }
+
 footer {
     background-color: black;
     color: white;
@@ -120,11 +122,20 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    #menu-button:hover {
+        background-color: rgb(80, 80, 80);
+    }
     #navigation {
         display: none;
         position: absolute;
         top: 100%;
         right: 0;
+    }
+    .navlinks {
+        flex-direction: column;
+    }
+    .navlink>a, .navlink>.label, #drop-down-items>li>a {
+        border-top: 1px solid white;
     }
     #drop-down-items {
         display: none;
@@ -134,14 +145,5 @@ footer {
     }
     #navigation.open {
         display: block;
-    }
-    .navlinks {
-        flex-direction: column;
-    }
-    .navlink>a, .navlink>.label, .options>li>a {
-        border-top: 1px solid white;
-    }
-    #menu-button:hover {
-        background-color: rgb(80, 80, 80);
     }
 }
