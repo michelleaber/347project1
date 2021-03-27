@@ -4,6 +4,8 @@ const value = name.value;
 
 submitButton.addEventListener('click', () => {
    setCookie(name, value, 30);
+   alert('Your input has been submitted. Thank you!');
+
 });
 
 function setCookie(name, value, numDays) {
@@ -13,6 +15,7 @@ function setCookie(name, value, numDays) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
  
   }
+
 
 // function getCookie(name) {
 // }
