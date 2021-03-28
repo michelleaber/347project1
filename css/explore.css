@@ -10,11 +10,13 @@
     border: none;
     background-color: whitesmoke;
     margin-top: 20px;
+    box-shadow: 3px 6px 9px grey;
 }
 
 .content {
     max-height: 0;
     overflow: hidden;
+    /* box-shadow: 3px 6px 9px grey; */
     transition: max-height 0.2s ease-out;
 }
 
