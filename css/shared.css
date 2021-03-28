@@ -6,10 +6,11 @@ body {
     min-height: 100vh;
 }
 
-#main-content {
+main {
     flex-grow: 1;
     flex-basis: 0;
 }
+
 
 header, h1, h2, h3 {
     margin: 0;
