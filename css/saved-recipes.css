@@ -1,11 +1,11 @@
 #saved-recipes-container {
     justify-content: space-around;
+    position: relative;
+    height: auto;
 }
-.card {
-    flex-grow: 1;
+
+#save-recipes-card {
     border: solid 1px black;
-    box-shadow: 3px 6px 9px grey;
-    background-color:whitesmoke;
     padding: 5px;
     margin-top: 20px;
 }
