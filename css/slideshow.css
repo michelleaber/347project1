@@ -28,7 +28,7 @@
   box-sizing: border-box;
 }
 
-.img-caption {
+.slide-img-caption {
   position: absolute;
   top: 0;
   right: 0;
@@ -39,7 +39,7 @@
   font-style: italic;
 }
 
-.img-caption>a {
+.slide-img-caption>a {
   color: white;
 }
 

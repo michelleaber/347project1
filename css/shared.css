@@ -12,12 +12,14 @@ main {
 }
 
 
-header, h1, h2, h3 {
-    margin: 0;
+header, h1, h2, h3, h4{
     font-family: Arial, sans-serif;
 }
+header, h1, h2, h3{
+    margin: 0;
+}
 
-p, a, label, textarea, button, .label, .slide-img-caption {
+p, a, label, textarea, button, .label, .slide-img-caption,li {
     font-family: Georgia;
 }
 

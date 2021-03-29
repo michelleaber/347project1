@@ -1,4 +1,4 @@
-#recipe-forms-card {
+.card {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -25,12 +25,12 @@ input[type=submit] {
     /* align-items: center !important; */
 }
 
-#recipe-forms-card:focus-within {
+.card:focus-within {
     outline-color: blue;
     outline-style: none;
 }
 
-#recipe-forms-card:focus-within>span {
+.card:focus-within>span {
     font-weight: bold;
     text-overflow: clip;
 }

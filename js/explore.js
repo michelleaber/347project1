@@ -1,4 +1,4 @@
-const accordions = document.querySelectorAll('#accordion-card');
+const accordions = document.querySelectorAll('.card');
 for (let index = 0; index < accordions.length; index+=1) {
     accordions[index].addEventListener('click', function () {
         this.classList.toggle('open');

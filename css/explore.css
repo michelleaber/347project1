@@ -1,4 +1,4 @@
-#accordion-card {
+.card {
     display: flex;
     flex-direction: row;
     cursor: pointer;
