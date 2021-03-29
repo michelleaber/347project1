@@ -21,14 +21,14 @@
   margin: 0;
 }
 
-#slide-img {
+.slide-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   box-sizing: border-box;
 }
 
-#img-caption {
+.img-caption {
   position: absolute;
   top: 0;
   right: 0;
@@ -39,7 +39,7 @@
   font-style: italic;
 }
 
-#img-caption>a {
+.img-caption>a {
   color: white;
 }
 
@@ -81,6 +81,8 @@
   font-size: 4em;
   padding: 30px;
   font-style: italic;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 #drop-down-items>li>a {
@@ -91,7 +93,7 @@
   .slide {
     width: 100%;
   }
-  #slide-img {
+  .slide-img {
     width: 100%;
   }
 }

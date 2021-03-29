@@ -1,11 +1,9 @@
 const accordions = document.querySelectorAll('#accordion-card');
-console.log(accordions);
 for (let index = 0; index < accordions.length; index+=1) {
     accordions[index].addEventListener('click', function () {
-        this.classList.toggle('open'); // why does it work with this but not accordions.item(index)?
+        this.classList.toggle('open');
         // get the content
         let content = this.nextElementSibling;
-        console.log(this.nextElementSibling);
         // if clicked and the content is already open, then close it
         if (content.style.maxHeight) {
             content.style.maxHeight = null;

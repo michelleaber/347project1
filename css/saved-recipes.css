@@ -8,4 +8,5 @@
     border: solid 1px black;
     padding: 5px;
     margin-top: 20px;
+    /* word-wrap:break-word; */
 }

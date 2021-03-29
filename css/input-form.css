@@ -4,6 +4,7 @@
     padding: 10px;
     margin-top: 20px;
     border-radius: 3px;
+    /* word-wrap:break-word; */
 }
 
 input[type=text], textarea, input[type=url] {
@@ -16,21 +17,22 @@ input[type=text], textarea, input[type=url], input[type=submit] {
 
 input[type=submit] {
     margin-top: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     width: 100%;
     background-color: lightblue;
     border: none;
     border-radius: 3px;
-    align-items: center !important;
+    /* align-items: center !important; */
 }
 
-.recipe-forms:focus-within {
+#recipe-forms-card:focus-within {
     outline-color: blue;
     outline-style: none;
 }
 
-.recipe-forms:focus-within>span {
+#recipe-forms-card:focus-within>span {
     font-weight: bold;
+    text-overflow: clip;
 }
 
 textarea {

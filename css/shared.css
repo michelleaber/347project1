@@ -17,7 +17,7 @@ header, h1, h2, h3 {
     font-family: Arial, sans-serif;
 }
 
-p, a, label, textarea, button, .label, #img-caption {
+p, a, label, textarea, button, .label, .slide-img-caption {
     font-family: Georgia;
 }
 
@@ -108,6 +108,9 @@ footer {
         top: 0;
         box-shadow: 0 0 20px black;
         z-index: 1;
+        /* added */
+        flex-wrap: wrap;
+
     }
     h1 {
         padding: 8px;
