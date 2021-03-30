@@ -76,35 +76,24 @@
   width: 100%;
   align-items: center;
 }
-/* .slide-welcome-message {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-} */
+
 
 #welcome-message {
-  /* font-size: 4em;
+  font-size: 3em;
   padding: 30px;
   font-style: italic;
   box-sizing: border-box;
-  height: 100%; */
-
-    font-size: 3em;
-    padding: 30px;
-    font-style: italic;
-    box-sizing: border-box;
 }
 
 #drop-down-items>li>a {
   border-top: 1px solid white;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .slide {
     width: 100%;
   }
   .slide-img {
     width: 100%;
   }
-}
+} */

@@ -1,9 +1,8 @@
-#saved-recipes-container {
-    /* justify-content: space-around;
+/* #saved-recipes-container {
+    justify-content: space-around;
     position: relative;
-    height: auto; */ 
-    /* do none of these do anything im confused */
-}
+    height: auto; 
+} */
 
 .card {
     border: solid 1px black;
