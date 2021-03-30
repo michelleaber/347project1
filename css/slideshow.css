@@ -80,7 +80,8 @@
 
 #welcome-message {
   font-size: 3em;
-  padding: 30px;
+  /* margin: 10px;
+  padding: 5px; */
   font-style: italic;
   box-sizing: border-box;
 }
@@ -89,11 +90,8 @@
   border-top: 1px solid white;
 }
 
-/* @media (max-width: 600px) {
-  .slide {
-    width: 100%;
+@media (max-width: 600px) {
+  #welcome-message {
+    padding: 5px;
   }
-  .slide-img {
-    width: 100%;
-  }
-} */
+}

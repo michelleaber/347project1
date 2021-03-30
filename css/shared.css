@@ -4,28 +4,46 @@ body {
     flex-direction: column;
     height: 100vh;
     min-height: 100vh;
+    min-width: 200px;
 }
 
 main {
     flex-grow: 1;
     flex-basis: 0;
 }
+header, h1, h2, h3, h4 {
+    margin: 0;
+    /* border: 5px red solid; */
+}
 
+/* a{
+    border: 5px solid red;
+} */
+/* h1  {
+    padding: 5px;
+    margin: 10px;
+    border: 5px red solid;
+} */
 
 header, h1, h2, h3, h4{
     font-family: Arial, sans-serif;
-}
-header, h1, h2, h3{
-    margin: 0;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
+/* #website-name{
+    margin-left: 10px;
+    padding-left: 5px;
+} */
+h1 {
+    /* border: 5px solid red; */
+}
 p, a, label, textarea, button, .label, .slide-img-caption,li {
     font-family: Georgia;
 }
 
 .navlinks, #drop-down-items {
     list-style-type: none;
-    padding: 0;
+    padding: 5px;
     margin: 0;
 }
 
@@ -35,14 +53,21 @@ p, a, label, textarea, button, .label, .slide-img-caption,li {
     justify-content: flex-start;
     background-color: black;
     font-size: 1.5em;
+    /* margin-left: 10px; */
+    /* padding-left: 15px; */
+    
+
 }
 
 .navlink {
     position: relative;
+    
+    
 }
 
 .navlink>a, .label, #drop-down-items>li>a {
     display: block;
+    /* margin: 10px; */
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -82,6 +107,7 @@ p, a, label, textarea, button, .label, .slide-img-caption,li {
     flex-basis: 0;
     margin: 10px;
     padding: 5px;
+
 }
 
 .card {
@@ -115,7 +141,8 @@ footer {
 
     }
     h1 {
-        padding: 8px;
+        /* padding: 8px; */
+        padding: 5px;
     }
     #menu-button {
         display: flex;
