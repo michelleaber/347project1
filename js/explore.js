@@ -7,7 +7,6 @@ for (let index = 0; index < accordions.length; index+=1) {
         // if clicked and the content is already open, then close it
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
-
         // if clicked and the content is currently closed, then open it
         } else {
             content.style.maxHeight = content.scrollHeight + "px";
