@@ -20,8 +20,9 @@ header, h1, h2, h3, h4 {
     font-family: Arial, sans-serif;
 }
 
+/*  why label and .label check this */
 p, a, label, textarea, button, .label, .slide-img-caption, li {
-    font-family: Georgia;
+    font-family: Georgia, serif;
 }
 
 .nav-links, #drop-down-items {
