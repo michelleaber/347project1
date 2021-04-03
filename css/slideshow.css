@@ -77,7 +77,6 @@
   align-items: center;
 }
 
-
 #welcome-message {
   font-size: 3em;
   font-style: italic;
@@ -86,10 +85,4 @@
 
 #drop-down-items>li>a {
   border-top: 1px solid white;
-}
-
-@media (max-width: 600px) {
-  #welcome-message {
-    padding: 5px;
-  }
 }

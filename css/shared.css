@@ -12,7 +12,7 @@ main {
     flex-basis: 0;
 }
 
-#header-homepage-link {
+#h1-homepage-link {
     text-decoration: none;
 }
 
@@ -114,7 +114,6 @@ footer {
         z-index: 1;
     }
     h1 {
-        padding: 5px;
         color: white;
     }
     #menu-button {
@@ -146,5 +145,8 @@ footer {
     }
     #navigation.open {
         display: block;
+    }
+    .container {
+        padding: 10px;
     }
 }
