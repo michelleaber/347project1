@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Cook Book</h1>
+            <a href="index.html"id="header-homepage-link"><h1>Cook Book</h1></a>
         </div>
 
 
@@ -34,7 +34,7 @@
                 <li class="nav-link"><a href="explore.html">Explore</a></li>
                 <li class="nav-link"><a href="saved-recipes.html">View Your Saved Recipes</a></li>
                 <li class="nav-link">
-                    <div class="label" id="save-a-recipe">
+                    <div class="label-for-drop-down" id="save-a-recipe">
                         Save A Recipe&#9660;
                     </div>
                     <ul id="drop-down-items">
@@ -48,20 +48,19 @@
     <main>
         <div class="container">
             <h2>Create Your Own Recipe</h2>
-                <form>
-                    <label class="card"><span>Enter the name of the recipe: </span><input type="text"
-                            id="recipe-name" name="recipe-name"></label>
-                    <label class="card"><span>Enter the ingredients for the recipe: </span><textarea rows="10"
-                            name="recipe-ingredients" placeholder="Enter ingredients here..."></textarea></label>
-                    <label class="card"><span>Enter the instructions for the recipe: </span><textarea rows="10"
-                            name="recipe-instructions"
-                            placeholder="Enter instructions here..."></textarea></label>
+            <form>
+                <label class="card"><span>Enter the name of the recipe: </span><input type="text" id="recipe-name"
+                        name="recipe-name"></label>
+                <label class="card"><span>Enter the ingredients for the recipe: </span><textarea rows="10"
+                        name="recipe-ingredients" placeholder="Enter ingredients here..."></textarea></label>
+                <label class="card"><span>Enter the instructions for the recipe: </span><textarea rows="10"
+                        name="recipe-instructions" placeholder="Enter instructions here..."></textarea></label>
 
-                    <label class="card"><span>Notes: </span><textarea rows="10" name="recipe-notes"
-                            placeholder="Enter any additional notes here..."></textarea></label>
+                <label class="card"><span>Notes: </span><textarea rows="10" name="recipe-notes"
+                        placeholder="Enter any additional notes here..."></textarea></label>
 
-                    <label><input type="submit" class='button-submit' id="submitted-create-a-recipe"></label>
-                </form>
+                <label><input type="submit" class='button-submit' id="submitted-create-a-recipe"></label>
+            </form>
         </div>
     </main>
     <footer>

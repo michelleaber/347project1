@@ -12,13 +12,10 @@
     <script defer src="js/nav-bar.js"></script>
     <script defer src="js/slideshow.js"></script>
 </head>
-
-
 <body>
-
     <header>
         <div class="container">
-            <h1>Cook Book</h1>
+            <a href="index.html"id="header-homepage-link"><h1>Cook Book</h1></a>
         </div>
 
         <div id="menu-button">
@@ -28,15 +25,14 @@
                 <rect fill="white" y="60" width="100" height="15"></rect>
             </svg>
         </div>
-        
+
         <nav id="navigation">
-            
             <ul class="nav-links">
                 <li class="nav-link"><a href="index.html">Home</a></li>
                 <li class="nav-link"><a href="explore.html">Explore</a></li>
                 <li class="nav-link"><a href="saved-recipes.html">View Your Saved Recipes</a></li>
                 <li class="nav-link">
-                    <div class="label" id="save-a-recipe">
+                    <div class="label-for-drop-down" id="save-a-recipe">
                         Save A Recipe&#9660;
                     </div>
                     <ul id="drop-down-items">
@@ -47,7 +43,6 @@
             </ul>
         </nav>
     </header>
-    
     <main>
         <div class="carousel">
             <div class="slide">
@@ -64,7 +59,7 @@
 
             </figure>
             <figure class="slide">
-                <img class="slide-img"  src="images/donuts.jpeg"
+                <img class="slide-img" src="images/donuts.jpeg"
                     alt="Maple Bacon Donuts; A few donuts on a grid backing rack. The donuts have shiny glaze to them with bacon bits on top and around them.">
                 <figcaption class="slide-img-caption">Maple Bacon Donuts from The Hangry Woman. <a
                         href="https://hangrywoman.com/maple-bacon-donuts/" class="explore-button">Click here to
@@ -72,8 +67,8 @@
 
             </figure>
             <div id="controls">
-                    <div id="left" class="arrow">&#10216;</div>     
-                    <div id="right" class="arrow">&#10217;</div> 
+                <div id="left" class="arrow">&#10216;</div>
+                <div id="right" class="arrow">&#10217;</div>
             </div>
         </div>
     </main>
