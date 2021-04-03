@@ -1,12 +1,5 @@
-/* #saved-recipes-container {
-    justify-content: space-around;
-    position: relative;
-    height: auto; 
-} */
-
 .card {
     border: solid 1px black;
     padding: 5px;
     margin-top: 20px;
-    /* word-wrap:break-word; */
 }

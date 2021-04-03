@@ -4,7 +4,6 @@
     padding: 10px;
     margin-top: 20px;
     border-radius: 3px;
-    /* word-wrap:break-word; */
 }
 
 input[type=text], textarea, input[type=url] {
@@ -17,12 +16,10 @@ input[type=text], textarea, input[type=url], input[type=submit] {
 
 input[type=submit] {
     margin-top: 20px;
-    /* padding: 20px; */
     width: 100%;
     background-color: lightblue;
     border: none;
     border-radius: 3px;
-    /* align-items: center !important; */
 }
 
 .card:focus-within {
