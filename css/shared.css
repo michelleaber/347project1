@@ -120,7 +120,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 8px;
+        padding: 20px;
     }
     #menu-button:hover {
         background-color: rgb(80, 80, 80);
